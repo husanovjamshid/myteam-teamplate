@@ -484,4 +484,110 @@ img {
   height: 4px;
   background: #79C8C7;
   background-size: 100%;
+}
+
+.commit {
+  width: 100%;
+  background-color: #004047;
+  background-size: contain;
+  position: relative;
+}
+.commit::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 147px;
+  height: 100px;
+  background-image: url("../../images/success-left-bg.svg");
+  background-repeat: no-repeat;
+}
+.commit::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  background-image: url("../../images/success-right-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.commit__inner {
+  padding: 140px 0 150px;
+}
+
+.commit__content {
+  width: 100%;
+  max-width: 932px;
+  margin: 0 auto;
+}
+
+.commit__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.commit__title span {
+  color: #79C8C7;
+}
+
+.commit__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.commit__item {
+  margin-top: 92px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.users__block {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.users__block::before {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 56px;
+  top: 20px;
+  background-image: url("../../images/commit-1.svg");
+  background-repeat: no-repeat;
+  margin: -15px auto;
+}
+
+.users__name {
+  margin: 0;
+  padding: 24px 0 2px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.users__ceo {
+  margin: 0;
+  padding-bottom: 32px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
