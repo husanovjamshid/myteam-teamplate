@@ -78,3 +78,36 @@
         background-size: 100%;
     }
 }
+
+.hero__inner-about {
+    align-items: flex-start;
+}
+
+.hero__left-about {
+    width: 100%;
+    max-width: 350px;
+}
+
+.hero__right-about {
+    width: 100%;
+    max-width: 730px;
+}
+
+.about-hero {
+    position: relative;
+    &::before {
+       display: none;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 0px;
+        right: 0;
+        width: 100px;
+        height: 200px;
+        background-image: url('../../images/about-bg.svg');
+        background-repeat: no-repeat;
+    }
+}
