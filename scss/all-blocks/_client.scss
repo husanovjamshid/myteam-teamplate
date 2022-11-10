@@ -1,0 +1,39 @@
+.clients {
+    background-color: #012F34;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        background-image: url('../../images/clients-bg.svg');
+        background-repeat: no-repeat;
+    }
+    
+    &::after {
+        display: none;
+    }
+}
+
+.clients__inner {
+    padding: 140px 0 156px;
+}
+
+.client__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.clients__wrap {
+    @include flex;
+    width: 100%;
+    max-width: 1110px;
+    margin: 70px auto 0;
+}

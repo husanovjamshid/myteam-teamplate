@@ -908,6 +908,47 @@ img {
   margin-left: 16px;
 }
 
+.clients {
+  background-color: #012F34;
+  position: relative;
+}
+.clients::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url("../../images/clients-bg.svg");
+  background-repeat: no-repeat;
+}
+.clients::after {
+  display: none;
+}
+
+.clients__inner {
+  padding: 140px 0 156px;
+}
+
+.client__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.clients__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+  margin: 70px auto 0;
+}
+
 .site-footer {
   background-color: #002529;
   background-size: 100%;
