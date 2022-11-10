@@ -1,0 +1,11 @@
+@mixin flex($display:flex, $align:center, $justify:space-between) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin util($margin:0, $padding:0, $list:none) {
+    margin: $margin;
+    padding: $padding;
+    list-style-type: $list;
+}
