@@ -543,6 +543,7 @@ img {
 }
 
 .services__item {
+
   margin: 0;
   width: 100%;
   max-width: 480px;
@@ -553,11 +554,23 @@ img {
 .services__item::before {
   content: "";
   width: 172px;
+
+  width: 100%;
+  max-width: 445px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services__item::before {
+  content: "";
+  width: 72px;
+
   height: 72px;
   display: block;
   background-image: url("../../images/success-1.svg");
   background-repeat: no-repeat;
 }
+
 .services__item:nth-child(2)::before {
   background-image: url("../../images/success-2.svg");
 }
@@ -573,6 +586,12 @@ img {
   max-width: 480px;
   display: block;
   margin: 0;
+
+
+.service__wrap {
+  display: block;
+  margin-left: 50px;
+
 }
 
 .service__title {
