@@ -13,6 +13,7 @@
     outline: none;
     background-color: transparent;
     offset: none;
+    cursor: pointer;
 }
 
 .contact__input + .contact__input {
@@ -23,6 +24,12 @@
     color: #FFFFFF;
 }
 
+.contact__input:active {
+    color: #F67E7E;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
 .contact__input::placeholder {
     font-weight: 600;
     font-size: 15px;
@@ -31,6 +38,10 @@
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.6;
+
+    &:hover {
+        color: red;
+    }
 }
 
 .contact__area {
@@ -58,6 +69,7 @@
 .contact__area:focus {
     color: #FFFFFF;
 }
+
 
 .contact__button {
     border: 0;

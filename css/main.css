@@ -395,6 +395,10 @@ img {
   line-height: 28px;
   color: #FFFFFF;
   text-decoration: none;
+  transition: all 0.4s ease;
+}
+.sitenav__link:active {
+  color: #F67E7E;
 }
 
 .sitenav__contact {
@@ -407,6 +411,11 @@ img {
   line-height: 28px;
   color: #FFFFFF;
   text-decoration: none;
+  transition: all 0.4s ease;
+}
+.sitenav__contact:active {
+  background: #FFFFFF;
+  color: #002529;
 }
 
 .hero {
@@ -791,6 +800,11 @@ img {
   font-size: 18px;
   line-height: 28px;
   color: #012F34;
+  transition: all 0.4s ease;
+}
+.starter__link:active {
+  background: #012F34;
+  color: #FFFFFF;
 }
 
 .directors {
@@ -865,10 +879,12 @@ img {
   width: 56px;
   height: 56px;
   background-image: url("../../images/about-circle.svg");
+  cursor: pointer;
 }
 .directors__item:nth-child(6)::before {
   background-image: url("../../images/block-oval.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .dir-item__block {
@@ -1026,6 +1042,7 @@ img {
   outline: none;
   background-color: transparent;
   offset: none;
+  cursor: pointer;
 }
 
 .contact__input + .contact__input {
@@ -1034,6 +1051,12 @@ img {
 
 .contact__input:focus {
   color: #FFFFFF;
+}
+
+.contact__input:active {
+  color: #F67E7E;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 
 .contact__input::-moz-placeholder {
@@ -1064,6 +1087,15 @@ img {
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.6;
+}
+.contact__input::-moz-placeholder:hover {
+  color: red;
+}
+.contact__input:-ms-input-placeholder:hover {
+  color: red;
+}
+.contact__input::placeholder:hover {
+  color: red;
 }
 
 .contact__area {

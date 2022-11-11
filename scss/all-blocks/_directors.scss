@@ -67,11 +67,15 @@
         width: 56px;
         height: 56px;
         background-image: url('../../images/about-circle.svg');
+        cursor: pointer;
+
+       
     }
     
     &:nth-child(6)::before {
         background-image: url('../../images/block-oval.svg');
         background-repeat: no-repeat;
+        cursor: pointer;
     }
 }
 

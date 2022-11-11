@@ -29,6 +29,13 @@
     line-height: 28px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all .4s ease;
+    
+    &:active {
+        color: #F67E7E;
+    }
+
+    
 }
 
 .sitenav__contact {
@@ -41,4 +48,10 @@
     line-height: 28px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all .4s ease;
+    
+    &:active {
+        background: #FFFFFF;
+        color: #002529;
+    }
 }
