@@ -51,3 +51,9 @@
     mix-blend-mode: normal;
     opacity: 0.6;
 }
+
+@include media(768px) {
+    .site-footer {
+        padding: 56px 0;
+    }
+}

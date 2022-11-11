@@ -47,9 +47,36 @@
     line-height: 28px;    
     color: #012F34;
     transition: all .4s ease;
-
+    
     &:active {
         background: #012F34;
         color: #FFFFFF;
+    }
+}
+
+@include media(768px) {
+    .starter {
+        &::before {
+            content: "";
+
+            height: 122px;
+        }
+    }
+
+    .starter__inner {
+        padding: 90px 0;
+    }    
+
+    .starter__content {
+        max-width: 573px;
+    }
+
+    .starter__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .starter__link {
+        padding: 9px 32px;
     }
 }
