@@ -1089,15 +1089,6 @@ img {
   mix-blend-mode: normal;
   opacity: 0.6;
 }
-.contact__input::-moz-placeholder:hover {
-  color: red;
-}
-.contact__input:-ms-input-placeholder:hover {
-  color: red;
-}
-.contact__input::placeholder:hover {
-  color: red;
-}
 
 .contact__area {
   outline: none;
