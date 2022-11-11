@@ -69,11 +69,11 @@
         background-image: url('../../images/success-1.svg');
         background-repeat: no-repeat;
     }
-
+    
     &:nth-child(2)::before {
         background-image: url('../../images/success-2.svg');
     }
-
+    
     &:nth-child(3)::before {
         background-image: url('../../images/success-3.svg');
     }
@@ -106,4 +106,15 @@
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.8;
+}
+
+.service__title-contact {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.services__item-contact {
+    max-width: 540px;
 }

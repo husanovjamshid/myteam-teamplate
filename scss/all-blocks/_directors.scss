@@ -68,7 +68,7 @@
         height: 56px;
         background-image: url('../../images/about-circle.svg');
     }
-
+    
     &:nth-child(6)::before {
         background-image: url('../../images/block-oval.svg');
         background-repeat: no-repeat;
@@ -121,4 +121,54 @@
 
 .icons__logo + .icons__logo {
     margin-left: 16px;
+}
+
+.directors__contact {
+    background-color: #014E56;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 100px;
+        left: 0;
+        width: 100px;
+        height: 200px;
+        background-image: url('../../images/directors-bg.svg');
+        background-repeat: no-repeat;
+    }
+    
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 10px;
+        right: 0;
+        width: 100px;
+        height: 250px;
+        background-image: url('../../images/contact-bg.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+.contact__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+
+.contact__desc {
+    margin: 0;
+    margin: 16px 0 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #F67E7E;
+}
+
+.directors__inner-contact {
+    padding: 80px 15px 168px;
+    @include flex;
 }
