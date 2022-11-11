@@ -46,4 +46,10 @@
     font-size: 18px;
     line-height: 28px;    
     color: #012F34;
+    transition: all .4s ease;
+
+    &:active {
+        background: #012F34;
+        color: #FFFFFF;
+    }
 }
