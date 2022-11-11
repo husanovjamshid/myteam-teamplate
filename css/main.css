@@ -1051,6 +1051,7 @@ img {
 
 .contact__input:focus {
   color: #FFFFFF;
+  opacity: 0.6;
 }
 
 .contact__input:active {
@@ -1142,6 +1143,7 @@ img {
 
 .contact__area:focus {
   color: #FFFFFF;
+  opacity: 0.6;
 }
 
 .contact__button {
