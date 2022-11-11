@@ -72,7 +72,7 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
-
+    
     &::before {
         content:  "";
         display: block;
@@ -102,4 +102,25 @@
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@include media(768px) {
+    .commit__content {
+        max-width: 573px;
+    }
+    
+    .commit__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .commit__list {
+        @include flex;
+        flex-direction: column;
+        margin: 0 auto;
+    } 
+
+    .commit__item {
+        max-width: 573px;
+    }
 }

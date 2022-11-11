@@ -358,6 +358,11 @@ img {
   padding: 0 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
 .site-header {
   padding: 73px 0;
   width: 100%;
@@ -527,6 +532,41 @@ img {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero::before {
+    display: none;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 25%;
+    width: 358px;
+    height: 100px;
+    background-image: url("../../images/header-circle-2.svg");
+    background-repeat: no-repeat;
+  }
+  .hero__inner {
+    max-width: 457px;
+    justify-content: center;
+    flex-direction: column;
+    display: block;
+    margin: 0 auto;
+  }
+  .hero__title {
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+  }
+  .hero__desc {
+    text-align: center;
+    font-size: 15px;
+  }
+  .hero__desc::before {
+    display: none;
+  }
+}
 .services {
   width: 100%;
   background-color: #004047;
@@ -646,6 +686,44 @@ img {
   max-width: 540px;
 }
 
+@media only screen and (max-width: 768px) {
+  .services {
+    width: 100%;
+    background-color: #004047;
+    background-size: contain;
+    position: relative;
+  }
+  .services::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100px;
+    height: 244px;
+    background-image: url("../../images/hero-circle.svg");
+    background-repeat: no-repeat;
+  }
+  .services__inner {
+    display: block;
+    margin: 0 auto;
+    padding: 136px 0 100px;
+  }
+  .services__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 64px;
+  }
+  .services__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100px;
+    width: 50px;
+    height: 4px;
+    background: #F67E7E;
+    background-size: 100%;
+  }
+}
 .commit {
   width: 100%;
   background-color: #014E56;
@@ -752,6 +830,25 @@ img {
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 768px) {
+  .commit__content {
+    max-width: 573px;
+  }
+  .commit__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .commit__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .commit__item {
+    max-width: 573px;
+  }
+}
 .starter {
   width: 100%;
   background-color: #F67E7E;
@@ -807,6 +904,25 @@ img {
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 768px) {
+  .starter::before {
+    content: "";
+    height: 122px;
+  }
+  .starter__inner {
+    padding: 90px 0;
+  }
+  .starter__content {
+    max-width: 573px;
+  }
+  .starter__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .starter__link {
+    padding: 9px 32px;
+  }
+}
 .directors {
   background-color: #004047;
   position: relative;
@@ -1208,4 +1324,10 @@ img {
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-footer {
+    padding: 56px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
