@@ -34,7 +34,7 @@
     &:active {
         color: #F67E7E;
     }
-
+    
     
 }
 
@@ -56,3 +56,14 @@
     }
 }
 
+@include media(768px) {
+    .sitenav {
+        margin-left: 40px;
+    }
+
+    .sitenav__contact {
+        padding: 8px 28px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}

@@ -132,6 +132,28 @@
         }
     }
     
+    .about-hero {
+        width: 100%;
+        background-color: #014E56;
+        background-size: contain;
+        position: relative;
+        position: relative;
+        &::before {
+            display: none;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0px;
+            right: 0;
+            width: 100px;
+            height: 200px;
+            background-image: url('../../images/about-bg.svg');
+            background-repeat: no-repeat;
+        }
+    }
     
     .hero__inner {
         max-width: 457px;
@@ -154,5 +176,10 @@
         &::before {
             display: none;
         }
+    }
+
+    .hero__left-about {
+        display: block;
+        margin: 0 auto;
     }
 }
