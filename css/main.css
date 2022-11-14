@@ -423,6 +423,16 @@ img {
   color: #002529;
 }
 
+@media only screen and (max-width: 768px) {
+  .sitenav {
+    margin-left: 40px;
+  }
+  .sitenav__contact {
+    padding: 8px 28px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
 .hero {
   width: 100%;
   background-color: #014E56;
@@ -547,6 +557,27 @@ img {
     background-image: url("../../images/header-circle-2.svg");
     background-repeat: no-repeat;
   }
+  .about-hero {
+    width: 100%;
+    background-color: #014E56;
+    background-size: contain;
+    position: relative;
+    position: relative;
+  }
+  .about-hero::before {
+    display: none;
+  }
+  .about-hero::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    right: 0;
+    width: 100px;
+    height: 200px;
+    background-image: url("../../images/about-bg.svg");
+    background-repeat: no-repeat;
+  }
   .hero__inner {
     max-width: 457px;
     justify-content: center;
@@ -565,6 +596,10 @@ img {
   }
   .hero__desc::before {
     display: none;
+  }
+  .hero__left-about {
+    display: block;
+    margin: 0 auto;
   }
 }
 .services {
@@ -924,6 +959,7 @@ img {
   }
 }
 .directors {
+  z-index: 2;
   background-color: #004047;
   position: relative;
 }
@@ -1102,6 +1138,24 @@ img {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 768px) {
+  .directors__list {
+    width: 100%;
+    max-width: 573px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin: 64px auto;
+    flex-wrap: wrap;
+    row-gap: 56px;
+  }
+  .directors__item {
+    max-width: 281px;
+  }
+}
 .clients {
   background-color: #012F34;
   position: relative;
@@ -1143,6 +1197,34 @@ img {
   margin: 70px auto 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .clients {
+    background-color: #012F34;
+    position: relative;
+  }
+  .clients::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -100px;
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    background-image: url("../../images/clients-bg.svg");
+    background-repeat: no-repeat;
+  }
+  .clients::after {
+    display: none;
+  }
+  .clients__wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 689px;
+    gap: 20px;
+    margin: 70px auto 0;
+  }
+}
 .contact__form {
   width: 100%;
   max-width: 540px;
