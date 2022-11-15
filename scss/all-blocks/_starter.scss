@@ -79,3 +79,15 @@
         padding: 9px 32px;
     }
 }
+
+@include media(576px) {
+    .starter__content {
+        flex-direction: column;
+        max-width: 327px;
+        text-align: center;
+    }
+
+    .starter__link {
+        margin-top: 24px;
+    }
+}

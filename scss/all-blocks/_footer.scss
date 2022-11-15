@@ -57,3 +57,28 @@
         padding: 56px 0;
     }
 }
+
+@include media(576px) {
+    .site-footer__list {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .site-footer__item {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .item__desc {
+        margin: 0 auto;
+    }
+    
+    .icons {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .item__copy {
+        margin-top: 0;
+    }
+}

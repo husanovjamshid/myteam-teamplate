@@ -84,3 +84,8 @@
     cursor: pointer;
 }
 
+@include media(768px) {
+    .contact__form {
+        margin-top: 50px;
+    }
+}

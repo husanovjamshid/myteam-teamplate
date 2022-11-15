@@ -192,4 +192,46 @@
     .directors__item {
         max-width: 281px;
     }
+
+    .directors__inner-contact {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@include media(576px) {
+    .directors {
+        z-index: 2;
+        background-color: #004047;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            z-index: 1;
+            top: -100px;
+            left: 0;
+            width: 100px;
+            height: 200px;
+            background-image: url('../../images/directors-bg.svg');
+            background-repeat: no-repeat;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0px;
+            right: 0;
+            width: 147px;
+            height: 100px;
+            background-image: url('../../images/about-bottom-bg.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    .directors__list {
+        justify-content: center;
+    }
 }
