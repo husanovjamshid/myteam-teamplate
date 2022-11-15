@@ -70,6 +70,11 @@
         font-size: 15px;
         line-height: 24px;
     }
+
+    .sitenav__menu {
+        display: block;
+        margin-left: auto;
+    }
 }
 
 @include media(576px) {
