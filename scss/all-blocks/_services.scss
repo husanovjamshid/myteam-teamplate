@@ -59,13 +59,14 @@
     width: 100%;
     max-width: 480px;
     display: block;
-    // margin-left: auto;
+
     @include flex($justify:null);
     &::before {
         content: "";
-        width: 172px;
+        width: 72px;
         height: 72px;
         display: block;
+        margin-right: 20px;
         background-image: url('../../images/success-1.svg');
         background-repeat: no-repeat;
     }
@@ -144,6 +145,10 @@
         margin: 0 auto;
         padding: 136px 0 100px;
     }
+
+    .services__item {
+        max-width: 544px;
+    }
     
     .services__title {
         font-size: 32px;
@@ -160,5 +165,16 @@
             background: #F67E7E;
             background-size: 100%;
         }
+    }
+}
+
+@include media(576px) {
+    .services__content {
+        max-width: 240px;
+    }
+
+    .services__item {
+        flex-direction: column;
+        text-align: center;
     }
 }

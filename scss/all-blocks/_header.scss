@@ -3,6 +3,7 @@
     width: 100%;
     background-color: #014E56;
     background-size: contain;
+    z-index: 999;
 }
 
 .site-header__inner {
@@ -55,6 +56,9 @@
         color: #002529;
     }
 }
+.sitenav__menu {
+    display: none;
+}
 
 @include media(768px) {
     .sitenav {
@@ -65,5 +69,20 @@
         padding: 8px 28px;
         font-size: 15px;
         line-height: 24px;
+    }
+}
+
+@include media(576px) {
+    .sitenav {
+        display: none;
+    }
+
+    .sitenav__contact {
+        display: none;
+    }
+
+    .sitenav__menu {
+        display: block;
+        margin-left: auto;
     }
 }
